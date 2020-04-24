@@ -42,6 +42,7 @@ Le modèle Inception v3, pré entraîné sur les données ImageNet est constitu�
 
 En comparaison des résultats du CNN Home Made, le modèle Inception v3 renvoie de meilleurs résultats sur l'entraînement, mais pas aussi significativement que nous le pensions : 
 
-![Résultats 1](img/train_result.png)
-![Résultats 1](img/train_result.png)
+![Résultats 1](img/train_result1.png)
+
+![Résultats 1](img/train_result2.png)
 
