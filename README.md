@@ -29,6 +29,8 @@ python label_image.py --graph=retrained_graph.pb --image=test_images/rose.jpg --
 
 ## Inception V3
 
+_[Source](https://medium.com/@amalpaul0492/step-by-step-tensorflows-sample-flower-classification-tutorial-626e39a7ea0a)_
+
 Inception v3 est un modèle de reconnaissance d'images couramment utilisé qui a démontré, sur l'ensemble de données ImageNet, une justesse supérieure à 78,1 %. Il s'agit de l'aboutissement de nombreuses idées développées par plusieurs chercheurs au fil des années. Il est basé sur l'article originel Rethinking the Inception Architecture for Computer Vision (Repenser l'architecture Inception pour la vision par ordinateur) de Szegedy, et. al.
 Le modèle lui-même est constitué de composants de base symétriques et asymétriques incluant convolutions, pooling moyen, pooling maximal, concaténations, abandons et couches entièrement connectées. La normalisation par lots (batchnorm) est amplement utilisée dans le modèle et appliqué aux entrées d'activation. La perte est calculée via Softmax.
 
