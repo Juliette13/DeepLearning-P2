@@ -48,9 +48,9 @@ En comparaison des résultats du CNN Home Made, le modèle Inception v3 renvoie 
 
 ![Résultats 1](img/train_result2.png)
 
-Sur les données de test, le modèle semble avoir bien appris. Un petit bémol sur les dandelion qui sont représentées de deux manières relativement distinctes : en fleur jaune ou en boule à pistile. 
-Lors de la séparation des jeux de données train et test, il se peut que le mélange des dandelion n'est pas été correctement homogènes, et de ce fait, le modèle semble les reconnaître sur leur forme
-de boule à pistile et moins bien sous la forme de fleur. 
+Sur les données de test, le modèle semble avoir bien appris. Un petit bémol sur les dandelions qui sont représentés de deux manières relativement distinctes : en fleur jaune ou en boule à pistile. 
+Lors de la séparation des jeux de données train et test, il se peut que le mélange des dandelions n'est pas été correctement homogènes, et de ce fait, le modèle semble les reconnaître sur leur forme
+de boule et moins bien sous la forme de fleur. 
 
 ![Roses](img_test/rose.jpg)
 
