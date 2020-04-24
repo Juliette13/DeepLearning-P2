@@ -48,3 +48,102 @@ En comparaison des résultats du CNN Home Made, le modèle Inception v3 renvoie 
 
 ![Résultats 1](img/train_result2.png)
 
+Sur les données de test, le modèle semble avoir bien appris. Un petit bémol sur les dandelion qui sont représentées de deux manières relativement distinctes : en fleur jaune ou en boule à pistile. 
+Lors de la séparation des jeux de données train et test, il se peut que le mélange des dandelion n'est pas été correctement homogènes, et de ce fait, le modèle semble les reconnaître sur leur forme
+de boule à pistile et moins bien sous la forme de fleur. 
+
+![Roses](img_test/rose.jpg)
+
+*Résultats:*
+
+```
+rose 0.8698792
+tulip 0.05951355
+sunflower 0.05443528
+daisy 0.012677312
+dandelion 0.0034946725
+```
+
+![Roses et Tulipes](img_test/rosetulip.jpg)
+
+*Résultats:*
+
+```
+rose 0.78507674
+tulip 0.19733186
+daisy 0.008969039
+sunflower 0.0046077645
+dandelion 0.0040145987
+```
+
+![Sunflower](img_test/sun.jpg)
+
+*Résultats:*
+
+```
+sunflower 0.85328513
+daisy 0.0769573
+tulip 0.04169053
+rose 0.023621354
+dandelion 0.0044456623
+```
+
+![Le piège](img_test/de_tout.jpg)
+
+*Résultats:*
+
+```
+sunflower 0.9190891
+rose 0.054834332
+tulip 0.014547719
+daisy 0.009189899
+dandelion 0.0023389645
+```
+
+![Daisy](img_test/daisy.jpg)
+
+*Résultats:*
+
+```
+daisy 0.9995875
+sunflower 0.0002530757
+dandelion 0.00013128218
+tulip 2.2902886e-05
+rose 5.2693217e-06
+```
+
+![Daisy et Dendelion](img_test/dandd.jpg)
+
+*Résultats:*
+
+```
+daisy 0.9587073
+sunflower 0.032715585
+dandelion 0.004644958
+tulip 0.0036554784
+rose 0.00027668505
+```
+
+![Dendelion](img_test/dendelion.jpg)
+
+*Résultats:*
+
+```
+dandelion 0.71772665
+daisy 0.20059307
+sunflower 0.04220597
+tulip 0.036054574
+rose 0.0034197627
+```
+
+![Dendelion - Boule](img_test/souffle.jpg)
+
+*Résultats:*
+
+```
+dandelion 0.99303436
+sunflower 0.0028218022
+daisy 0.0023953475
+tulip 0.0012059223
+rose 0.0005425634
+```
