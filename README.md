@@ -10,9 +10,7 @@ __Contexte__ : Développer et mettre en place un modèle permettant de classifie
 
 ## Instanciation du projet
 
-### a. CNN - Home Made Model
-
-### b. Inception V3 - Modèle pré entraîné
+### a. Inception V3 - Modèle pré entraîné
 
 * Etape 1 : Télécharger les données sources [ici](https://www.kaggle.com/alxmamaev/flowers-recognition) et dezipper les données.
 * Etape 2 : A la racine du folder dezippé flowers-recognition, placer le fichier _retrain.py_ et le fichier _label_image.py_
@@ -26,6 +24,80 @@ python label_image.py --graph=retrained_graph.pb --image=test_images/rose.jpg --
 ```
 
 ## CNN - Home Made
+
+Modèle entraine sur GoogleCollab avec utilisation des TPU (entrainement hyper rapide).,Dataset téléversé sur le Google Drive personnel de Aubin. 
+
+### a. Architecture du modèle
+
+![Modèle XCNN](img/CNN_modèle.png)
+
+Entraînement lancé sur 50 epochs avec arrêt précipité si pas d’amélioration de l’erreur sur le jeu de validation. L’entrainement s’est arrête à l’epoch 36 et a enregistré le modèle avec les meilleurs poids.
+
+![Modèle XCNN](img/CNN_epoch.png)
+
+### b. Extraction des features
+
+Avec Keras, il est possible d’observer les caractéristiques extraites par les filtres de convolutions du modèle.
+
+![Modèle XCNN](img/f1.png)
+![Modèle XCNN](img/f2.png)
+![Modèle XCNN](img/f3.png)
+![Modèle XCNN](img/f4.png)
+![Modèle XCNN](img/f5.png)
+![Modèle XCNN](img/f6.png)
+
+### c. Résultats 
+
+**Rose :**
+rose 0.70560682
+daisy 0.29298031
+dandelion 0.0013545305
+sunflower 0.000052835607
+tulip 0.0000055734072
+
+**Rosetulip:**
+
+rose 0.99418563
+dandelion 0.0014568941
+daisy 0.0043221936
+sunflower 0.000030934043
+tulip 0.0000044345020
+
+**Sun:**
+rose 0.81088716
+daisy 0.18447946
+sunflower 0.0045855162
+dandelion 0.000047037811
+tulip 0.00000085125743
+
+**De_tout:**
+daisy 0.65639359
+rose 0.34166390
+dandelion 0.0010730935
+tulip 0.00086842693
+sunflower 0.00000093422130
+
+**Daisy:**
+rose 0.95671463
+daisy 0.028695641
+dandelion 0.014586471
+sunflower 0.000003.1854252
+tulip 0.0000000091694137
+
+**Dand:**
+daisy 0.89664221
+rose 0.10324556
+sunflower 0.000018046019
+dandelion 0.000093968447
+tulip 0.00000020535882
+
+**Souffle:**
+dandelion 0.99796993
+daisy 0.0012352887
+rose 0.00077487098
+sunflower 0.000015674348
+tulip 0.0000042655129
+
 
 ## Inception V3
 
